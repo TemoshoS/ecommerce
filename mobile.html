@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>E-commerce product page</title>
+
+   
+    </style>
+  </head>
+  <body>
+
+    <!--naviagation bar-->
+     <head>
+      <div>
+        <table style="width: 95%;">
+          <tr>
+            <td>
+                <div id="mySidebar" class="sidebar">
+              <ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="/collection" class="nav-link">Collections</a>
+                <a href="/men" class="nav-link">Men</a>
+                <a href="/women" class="nav-link">Women</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/condact" class="nav-link">Conduct</a>
+              </ul>
+            </div>  
+
+              <button class="openbtn" onclick="openNav()">☰</button> 
+              <img src="./images/logo.svg" width="150px" alt="No logo">
+            </td>
+            <td align="right">
+              
+              <div>
+                <ul >
+                  <button  type="button" onclick="myFunction()"><img src="./images/icon-cart.svg"  alt="No cart" /></button> 
+                    
+                
+
+                    <img src="./images/image-avatar.png " style=" width: 50px; border-radius: 50%; object-fit: cover; border: 3px solid rgb(196, 116, 12);" alt="No Profile">
+                   
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </head>
+
+    <main>
+      
+          <!--Product Image-->
+          <img src="./images/image-product-1.jpg" style="width: 505px;height: 450px; border-radius: 19px; display: block;margin-left: auto;margin-right: auto;">
+
+          <div style="height: 20px;"></div>
+
+          
+    
+    <div style="text-align: left;padding-left: 420px;"> 
+        
+    <!--Product details-->
+    <p style="color: orangered;" id="name"></p>
+    <!---->
+    <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" id="nameedition"></h1>
+    <!---->
+    <p style="color: rgb(155, 155, 155);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >These low-profile sneakers are your perfect <br>casual wear companion.Featuring a durable <br> rubber outer sole, they’ll withstand everything <br> theweather can offer.</p>
+    <!---->
+    
+    <p><b style="font-size: 20px;">$125.00 </b> <b style="color:orangered;font-size: small;background-color: rgb(252, 228, 218);border-radius: 4px;">50%</b><s><b style="color: rgb(155, 155, 155);font-size: 15px;">$250.00</b></s></p>
+    
+    
+
+     <div >
+      <!--Add to cart-->
+      <input style="color: orangered;" class="button" type="button" onclick="decrementValue()" value="-" />
+      <input style="padding-left: 418px;text-align: right;" class="button" type="text" name="quantity" value="1" maxlength="2" max="100" size="1" id="number" />
+      <input style="color: orangered;" class="button" type="button" onclick="incrementValue()" value="+" />
+     </div>
+     <div>
+      <button type="button" class="button" style="width: 500px;background-color: rgb(221, 84, 34);color: white;"><img src="./images/icons8-shopping-cart-24 (1).png" width="20px" /> <b>Add to cart</b></button>
+    </div>
+    
+    
+</div>
+
+  
+  </main>
+
+    <!--Footer-->
+    <div class="attribution">
+      Bootcamp 2023 by
+      <a href="https://www.mlab.co.za" target="_blank">CodeTribe</a>. Developed
+      by <a href="#">Temosho Shaku</a>.
+    </div>
+    <script src="./javascript/javascript.js"></script>
+  </body>
+</html>
+
+<!-- Source Frontend Mentor: https://www.frontendmentor.io -->

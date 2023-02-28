@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>E-commerce product page</title>
+
+   
+    </style>
+  </head>
+  <body>
+
+    <!--naviagation bar-->
+     <head>
+      <div>
+        <table style="width: 95%;">
+          <tr>
+            <td>
+              <ul>
+                <img src="./images/logo.svg" width="150px" alt="No logo">
+                <a href="/collection" class="nav-link">Collections</a>
+                <a href="/men" class="nav-link">Men</a>
+                <a href="/women" class="nav-link">Women</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/condact" class="nav-link">Conduct</a>
+              </ul>
+            </td>
+            <td align="right">
+              
+              <div>
+                <ul >
+                  <button  type="button" onclick="myFunction()"><img src="./images/icon-cart.svg"  alt="No cart" /></button> 
+                    
+                
+
+                    <img src="./images/image-avatar.png " style=" width: 50px; border-radius: 50%; object-fit: cover; border: 3px solid rgb(196, 116, 12);" alt="No Profile">
+                   
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </head>
+
+    <main>
+      <!--Shoping cart table-->
+      <table><tr><td>
+        <div style="margin-left: 1000px;" id="myDIV">
+
+          <div class="card">
+            
+            <div class="container">
+            
+              <h2>Cart</h2>
+                <hr class="solid">
+              <p>Your cart is empty</p> 
+            </div>
+          </div>
+          </div>
+      </td></tr></table>
+
+     <table>
+
+      <!--Product Pictures-->
+       <tr>
+        <td style="padding-left: 20vh; padding-top: 50px">
+           <img src="./images/image-product-1.jpg" style="width: 505px;height: 450px; border-radius: 19px;">
+
+          <div style="height: 20px;"></div>
+
+          <div>
+           <img class="product" id="myBtn" src="./images/image-product-1-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+           
+           <img class="product" id="myBtn" src="./images/image-product-2-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+
+           <img class="product" id="myBtn" src="./images/image-product-3-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+
+           <img class="product" id="myBtn" src="./images/image-product-4-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+          
+          </div>
+        </td>
+
+        <td style="padding-right: 20vh; padding-top: 30px; padding-bottom: 30px">
+
+        </td>
+
+       <td  style=" text-align: left; padding-right: 25vh; padding-top: 30px; padding-bottom: 30px">
+        
+          
+    <!--Product details-->
+    <p style="color: orangered;" id="name"></p>
+    <!---->
+    <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" id="nameedition"></h1>
+    <!---->
+    <p style="color: rgb(155, 155, 155);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" id="description"></p>
+    <!---->
+    <p><b style="font-size: 20px;">$125.00 </b> <b style="color:orangered;font-size: small;background-color: rgb(252, 228, 218);border-radius: 4px;">50%</b></p>
+    <!---->
+    <p style="color: rgb(155, 155, 155);font-size: 15px;" id="discount"></p>
+     
+
+     <div >
+      <!--Add to cart-->
+      <input style="color: orangered;" class="button" type="button" onclick="decrementValue()" value="-" />
+      <input class="button" type="text" name="quantity" value="1" maxlength="2" max="100" size="1" id="number" />
+      <input style="color: orangered;" class="button" type="button" onclick="incrementValue()" value="+" />
+     
+      <button type="button" class="button" style="width: 170px;background-color: rgb(221, 84, 34);color: white;"><img src="./images/icons8-shopping-cart-24 (1).png" width="20px" /> <b>Add to cart</b></button>
+    </div>
+    </td>
+     </tr>
+   </table>
+
+
+   <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" style="width: 550px;">
+      <span class="close">&times;</span>
+      <div>
+        <img src="./images/icon-previous.svg">
+      <img src="./images/image-product-1.jpg" style="width: 505px;height: 450px; border-radius: 19px;"><img src="./images/icon-next.svg">
+    </div>
+          <div style="height: 20px;"></div>
+
+          <div>
+           <img class="product" src="./images/image-product-1-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+           
+           <img class="product" src="./images/image-product-2-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+
+           <img class="product" src="./images/image-product-3-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+
+           <img class="product" src="./images/image-product-4-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+          
+          </div>
+    </div>
+  
+  </div>
+  </main>
+
+    <!--Footer-->
+    <div class="attribution">
+      Bootcamp 2023 by
+      <a href="https://www.mlab.co.za" target="_blank">CodeTribe</a>. Developed
+      by <a href="#">Temosho Shaku</a>.
+    </div>
+    <script src="./javascript/javascript.js"></script>
+  </body>
+</html>
+
+<!-- Source Frontend Mentor: https://www.frontendmentor.io -->
