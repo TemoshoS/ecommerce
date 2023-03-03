@@ -157,10 +157,6 @@ hr.solid {
   background-color: #444;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
 
 
 @media screen and (max-height: 450px) {
