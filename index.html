@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
 
     <title>E-commerce product page</title>
 
@@ -81,13 +82,13 @@
           <div style="height: 20px;"></div>
 
           <div>
-           <img class="product" id="myBtn" src="./images/image-product-1-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+           <img id="myImg" class="product" id="myBtn" src="./images/image-product-1-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
            
-           <img class="product" id="myBtn" src="./images/image-product-2-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+           <img id="myImg" class="product" id="myBtn" src="./images/image-product-2-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
 
-           <img class="product" id="myBtn" src="./images/image-product-3-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+           <img id="myImg" class="product" id="myBtn" src="./images/image-product-3-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
 
-           <img class="product" id="myBtn" src="./images/image-product-4-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+           <img id="myImg" class="product" id="myBtn" src="./images/image-product-4-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
           
           </div>
         </td>
@@ -123,31 +124,28 @@
      </tr>
    </table>
 
+   <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  
+  <img src="./images/image-product-1.jpg" style="width: 505px;height: 450px; border-radius: 19px;">
 
-   <div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content" style="width: 550px;">
-      <span class="close">&times;</span>
-      <div>
-        <img src="./images/icon-previous.svg">
-      <img src="./images/image-product-1.jpg" style="width: 505px;height: 450px; border-radius: 19px;"><img src="./images/icon-next.svg">
-    </div>
-          <div style="height: 20px;"></div>
-
+    
           <div>
-           <img class="product" src="./images/image-product-1-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+           <img class="product" id="myBtn" src="./images/image-product-1-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
            
-           <img class="product" src="./images/image-product-2-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+           <img class="product" id="myBtn" src="./images/image-product-2-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
 
-           <img class="product" src="./images/image-product-3-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+           <img class="product" id="myBtn" src="./images/image-product-3-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
 
-           <img class="product" src="./images/image-product-4-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
+           <img class="product" id="myBtn" src="./images/image-product-4-thumbnail.jpg" style="width: 123px;height: 50x;border-radius: 19px;">
           
           </div>
-    </div>
-  
-  </div>
+</div>
+
+   
+
+
   </main>
 
     <!--Footer-->
@@ -158,6 +156,8 @@
       <ul><a href="./mobile.html">Mobile</a></ul>
     </div>
     <script src="./javascript/javascript.js"></script>
+
+    <script src="./javascript/modal.js"></script>
   </body>
 </html>
 
